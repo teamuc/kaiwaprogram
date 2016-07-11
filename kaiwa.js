@@ -17,10 +17,23 @@ function goScript(num) {
 	document.write("更新してください");
 
 }
-
-
-//入力された文をそのまま返す処理
+/*「こんにちは」か「こんばんは」に"Hello"と返す処理*/
 function onButtonClick() {
           target = document.getElementById("output");
-          target.innerText = document.forms.kaiwa.kaiwatext.value;
+          
+
+        /*
+		 * 検索対象文字列
+		 */
+		 var str = document.forms.kaiwa.kaiwatext.value;
+		 
+		/*
+		 * 指定した文字列が存在する位置を検索する
+		 */
+			if(str.indexOf("こんにちは")!=-1 || str.indexOf("こんばんは")!=-1){
+				document.write("Hello");
+		}else{
+			document.write("わかりません");
+      }
+          
 }
