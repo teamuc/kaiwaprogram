@@ -188,7 +188,14 @@ function onButtonClick() {
 				}else if(count<0){
 					document.write("もう過ぎました");
 				}
-				
+			}else if(str.indexOf("ありがとう")!=-1){
+			document.write("どういたしまして");
+		}else if(str.indexOf("さようなら")!=-1 || str.indexOf("さよなら")!=-1){
+			document.write("さようなら");
+		}else if(str.indexOf("ごめん")!=-1){
+			document.write("こちらこそごめんなさい");
+		}else if(str.indexOf("おめでとう")!=-1){
+			document.write("どうもありがとう");
 
       		}else{
       			document.write("わかりません");
