@@ -6,26 +6,23 @@
 	<meta charset="UTF-8">
 	<title>会話プログラム</title>
 	<script src="kaiwa.js"></script>		<!--　スクリプト読み込み -->
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
 
-<form id="kaiwa">
-<!--　選択肢　-->
-<input type="button" value="こんにちは" onClick="goScript(0)">
-<input type="button" value="こんばんは" onClick="goScript(1)"><br><br>
-
 <hr/>
 
 <!--　自由文　-->
+<p>下のフォームに入力してください</p>
+<form id="kaiwa">
+
 <input type="text" id="kaiwatext" value="">
-<input type="button" value="送信" onClick="onButtonClick()">
+<input type="button" value="発言" onClick="onButtonClick()">
+
 </form>
 
 <hr/>
-
-<p>返答</p>
- <div id="output"></div>
 
 
 </body>
